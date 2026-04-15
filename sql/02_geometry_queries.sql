@@ -13,7 +13,10 @@
 
 -- TODO: Write your query below
 
-
+SELECT 
+    ST_Area(geom) as new_brighton_area_sq_m
+    from nyc_neighborhoods
+    where name = 'New Brighton'
 
 
 -- Exercise 2: What is the area of the Bronx in acres?
