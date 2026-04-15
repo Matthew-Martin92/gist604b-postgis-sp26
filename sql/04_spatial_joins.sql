@@ -48,8 +48,11 @@ WHERE n.name = 'East Village';
 
 -- TODO: Write your query below
 
-
-
+SELECT DISTINCT n.name
+FROM nyc_neighborhoods AS n
+JOIN nyc_subway_stations AS ss
+    ON ST_Intersects(ss.geom, n.geom)
+WHERE ss.routes LIKE '%7%'
 
 -- Exercise 3: How many people live in the Financial District?
 -- Expected output: one row with total population
