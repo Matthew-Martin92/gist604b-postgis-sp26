@@ -67,8 +67,11 @@ WHERE ss.routes LIKE '%7%'
 
 -- TODO: Write your query below
 
-
-
+SELECT SUM(popn_total) as total_population
+FROM nyc_census_blocks as cb
+JOIN nyc_neighborhoods AS n
+    ON ST_Intersects(cb.geom, n.geom)
+WHERE n.name = 'Financial District'
 
 
 -- Exercise 4: What are the population densities (people / km^2) of the 'East Village' and 'West Village'?
