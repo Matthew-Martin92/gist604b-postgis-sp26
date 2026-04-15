@@ -88,7 +88,10 @@ FROM nyc_streets
 
 -- TODO: Write your query below
 
-
+SELECT 
+    SUM(ST_Length(geom)) as fifth_ave_length
+From nyc_streets
+where name = '5th Ave';
 
 
 -- Exercise 6: What is the JSON representation of the boundary of 'Soho'?
