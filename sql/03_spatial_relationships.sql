@@ -85,5 +85,16 @@ AND ns.name IS NOT NULL;
 
 -- TODO: Write your query below
 
-
+SELECT 
+    SUM(popn_total) AS total_population
+FROM nyc_census_blocks AS cb
+WHERE ST_DWithin(
+    cb.geom,
+    (
+         SELECT geom
+        FROM nyc_streets
+        WHERE name = 'Queensboro Brg'
+    ),
+    50
+);
 
