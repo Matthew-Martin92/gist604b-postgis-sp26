@@ -16,7 +16,7 @@
 SELECT 
     ST_Area(geom) as new_brighton_area_sq_m
     from nyc_neighborhoods
-    where name = 'New Brighton'
+    where name = 'New Brighton';
 
 
 -- Exercise 2: What is the area of the Bronx in acres?
@@ -31,7 +31,10 @@ SELECT
 -- Hint: Filter rows where boroname = 'The Bronx'
 
 -- TODO: Write your query below
-
+SELECT 
+    ST_area(ST_Union(geom))/4046.86 as bronx_area_acres
+from nyc_neighborhoods
+where boroname = 'The Bronx';
 
 
 
