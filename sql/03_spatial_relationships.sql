@@ -26,7 +26,18 @@ WHERE name = 'Queensboro Brg';
 -- Hint: Use the SQL query from Exercise 1 to get the geometry of Queensboro Brg in the WHERE clause
 
 -- TODO: Write your query below
-
+SELECT
+    nn.name, 
+    nn.boroname 
+FROM nyc_neighborhoods as nn
+where ST_Intersects(
+    nn.geom, 
+    (
+        SELECT geom
+        FROM nyc_streets
+        WHERE name = 'Queensboro Brg'
+    )
+);
 
 
 
