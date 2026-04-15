@@ -27,8 +27,8 @@ WHERE name = 'Queensboro Brg';
 
 -- TODO: Write your query below
 SELECT
-    nn.name, 
-    nn.boroname 
+    nn.name as neighborhood, 
+    nn.boroname as borough
 FROM nyc_neighborhoods as nn
 where ST_Intersects(
     nn.geom, 
