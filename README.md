@@ -1,12 +1,13 @@
-# [Project Title]
+# PostGIS
 
-**Student:** [YOUR NAME]
-**Course:** GIST 604B – Open Source GIS
-**Module:** [MODULE NUMBER AND NAME]
-**University of Arizona**
+**Student:** Matthew Martin  
+**Course:** GIST 604B – Open Source GIS  
+**Module:** Module 4: PostGIS Database Orchestration  
+**University of Arizona**  
 
 ## Project Description
 [2–3 sentences describing what this project is about and what you built or analyzed.]
+Repository for working with spatial data using PostgreSQL and PostGIS.
 
 ## Tools and Technologies
 - [Tool 1, e.g. QGIS, PostGIS, GeoPandas, Leaflet]
@@ -15,6 +16,9 @@
 
 ## What I Did
 [3–5 bullet points summarizing the key tasks completed in this assignment.]
+- Write and execute queries directly in the `sql/` files using the VS Code PostgreSQL extension.
+- Data is downloaded and prepared inside the Codespace environment and is not stored in this repository.
+- The database runs in a separate PostGIS container using Docker.
 
 ## How to View / Run
 [Instructions for viewing the project. For example:
@@ -24,11 +28,7 @@
 
 ## Repository Structure
 [Brief description of folders and key files]
-
-
-# GIST 604B – PostGIS
-
-Repository for working with spatial data using PostgreSQL and PostGIS.
+demos folder contains sql scripts discussed in the lectures.
 
 ## Repository Structure
 
@@ -51,8 +51,6 @@ Repository for working with spatial data using PostgreSQL and PostGIS.
 
 ## Notes
 
-- demos folder contains sql scripts discussed in the lectures.
+- 
 - SQL files contain exercises and hints.
-- Write and execute queries directly in the `sql/` files using the VS Code PostgreSQL extension.
-- Data is downloaded and prepared inside the Codespace environment and is not stored in this repository.
-- The database runs in a separate PostGIS container using Docker.
+-
