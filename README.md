@@ -6,31 +6,30 @@
 **University of Arizona**  
 
 ## Project Description
-[2–3 sentences describing what this project is about and what you built or analyzed.]
-Repository for working with spatial data using PostgreSQL and PostGIS.
+This project is a repository for working with spatial data using PostgreSQL and PostGIS. There are to help teach how to use SQL queries on example GIS datasets. Then I used the sql files from the sql folder to create my own SQL queries to find the information or satisfy the workflow needed for each topic.
 
 ## Tools and Technologies
-- [Tool 1, e.g. QGIS, PostGIS, GeoPandas, Leaflet]
-- [Tool 2]
-- [Tool 3]
+- SQL Queries
+- PostGIS
+- PostgreSQL
 
 ## What I Did
-[3–5 bullet points summarizing the key tasks completed in this assignment.]
-- Write and execute queries directly in the `sql/` files using the VS Code PostgreSQL extension.
-- Data is downloaded and prepared inside the Codespace environment and is not stored in this repository.
-- The database runs in a separate PostGIS container using Docker.
+- Set up a PostGIS-enabled PostgreSQL database using Docker
+- Import spatial datasets into a database environment
+- Wrote and executed queries using VS Code PostgreSQL extension for the following:
+    - basic sql queries
+    - queries to see the geometry of datasets
+    - spatial relationship queries
+    - spatial joins to join tables together
+
 
 ## How to View / Run
-[Instructions for viewing the project. For example:
-- Link to live GitHub Pages site (if applicable)
-- How to run a Python script
-- How to open the map]
+- Open in codespaces and set up a PostGIS-enabled PostgreSQL database using Docker.
+- Import spatial datasets into a database environment.
+- Run the code in each of the sql files to receive each output and visualization
 
 ## Repository Structure
-[Brief description of folders and key files]
-demos folder contains sql scripts discussed in the lectures.
-
-## Repository Structure
+The demos folder contains demonstration sql scripts to help learn the structure of sql queries. The sql folder contains custom queries that satify each of the the four topics used in the module.
 
     .
     ├── README.md
