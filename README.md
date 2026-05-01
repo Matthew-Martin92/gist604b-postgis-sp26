@@ -47,9 +47,3 @@ The demos folder contains demonstration sql scripts to help learn the structure 
     │   ├── demo_filtering_queries.sql
     │   └── demo_postgis_queries.sql
     └── docker-compose.yml
-
-## Notes
-
-- 
-- SQL files contain exercises and hints.
--
